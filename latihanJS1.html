@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo">Ini adalah text awal</p>
+   <button id="btn_demo" onclick="ubahText()">Ubah Text</button>
+   <button onclick="testWrite()">Write</button>
+   <button onclick="showAlert()">Show Alert</button>
+   <button onclick="showConsole()">Show Console</button>
+   <script>
+       function ubahText(){
+        var text = document.getElementById("demo").innerHTML
+        if(text == "Ini adalah text awal"){   
+            document.getElementById("demo").
+            innerHTML="Setelah di modif oleh JavaScript";
+            document.getElementById("btn_demo").
+            innerHTML="Kembali";
+        }else{
+            document.getElementById("demo").
+            innerHTML="Ini adalah text awal";
+            document.getElementById("btn_demo").
+            innerHTML="Ubah Text";
+        }
+    }
+    function testWrite(){
+        document.write("Test Write");
+    }
+    function showAlert(){
+        alert("Hallo")
+    }
+    function showConsole(){
+        console.log(10+1)
+    }
+   </script> 
+</body>
+</html>
